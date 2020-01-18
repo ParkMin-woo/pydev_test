@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>/templates/profile.html</title>
+</head>
+
+<body>
+
+	<h1>{{data.name}}의 프로필</h1>
+	<ul>
+		{% for item in data.list %}
+			<li>{{item}}</li>
+		{% endfor %}
+	</ul>
+
+</body>
+</html>
